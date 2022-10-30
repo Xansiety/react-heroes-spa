@@ -7,12 +7,10 @@ export const LoginPage = () => {
   const {onLoginUser} = useContext(AuthContext)
   const navigate = useNavigate();
 
-  const onLogin = () => {
+  const onLogin = () => { 
 
-
-    onLoginUser('Fernando');
-
-
+    onLoginUser('Fernando'); 
+    
     navigate("/marvel", {
       replace: true,
     });
