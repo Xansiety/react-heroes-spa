@@ -1,6 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { Navbar } from "../../ui";
 import { DcPage, MarvelPage, SearchPage, HeroPage } from "../pages";
+import { Redux } from "../pages/Redux";
 
 export const HeroesRoutes = () => {
   return (
@@ -14,6 +15,7 @@ export const HeroesRoutes = () => {
           {/* Search, Hero */}
           <Route path="search" element={<SearchPage />} />
           <Route path="hero/:id" element={<HeroPage />} />
+          <Route path="Redux" element={<Redux />} />
 
           <Route path="/" element={<Navigate to="/marvel" />} />
         </Routes>
