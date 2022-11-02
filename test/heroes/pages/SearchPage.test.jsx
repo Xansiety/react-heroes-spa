@@ -17,7 +17,7 @@ describe('Pruebas en <SearchPage />', () => {
     beforeEach(() => jest.clearAllMocks() );
 
     
-    test('debe de mostrarse correactamente con valores por defecto', () => {
+    test('debe de mostrarse correctamente con valores por defecto', () => {
         
         const { container } =render(
             <MemoryRouter>
