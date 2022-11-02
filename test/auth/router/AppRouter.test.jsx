@@ -17,7 +17,7 @@ describe('Pruebas en <AppRouter />', () => {
         // screen.debug()
         expect( screen.getAllByText('Login').length ).toBe(2) 
     });
-
+    
     test('debe de mostrar el componente de Marvel si está autenticado', () => { 
         const context = {
             logged: true,
